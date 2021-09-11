@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Date and time</h1>
+    <button onclick="alert( 'i am alert' )">alert</button>
+    <button onclick="myFunction()">calling fun2</button>
+    <button id="thirdway">calling fun3</button>
+    <button id="fourthway">calling fun4</button>
+    <!-- <p id ="demo"></p>
+    <p id ="time"></p> -->
+
+<script>
+    // function myFunction(){
+    //     var d  = new Date(1631004887107);
+    //     d.setHours(6);
+    //     document.getElementById("demo").innerHTML = d;
+    // }
+
+
+    // (function(){
+    //     setInterval(()=>{
+    //         var d  = new Date().toLocaleTimeString();
+    //         document.getElementById("time").innerHTML = d;
+    //     },1000)
+    // })();
+
+    // // var t = new Date().toLocaleTimeString();
+    // // document.getElementById("time").innerHTML = t;
+
+    // var d = new Date().toLocaleDateString();
+    // document.getElementById("demo").innerHTML = d;
+
+
+//2 way of writing funtion
+    const myFunction = () => {
+        alert('most comman way of writing function');
+    }
+//3 way of writing a function
+
+const thirdway = document.getElementById('thirdway');
+    
+thirdway.onclick = function() {
+        alert('most comman way of writing function')
+    }
+
+thirdway.onclick = function() {
+        console.log('most comman way of writing function')
+    }
+
+//4 way of writing function
+const fourthway = document.querySelector('#fourthway');
+
+fourthway.addEventListener('click', ()=> {
+    alert('I love this way of writing');
+})
+
+fourthway.addEventListener('click', ()=> {
+   console.log('I love this way of writing');
+})
+
+
+ 
+</script>
+
+//3rd way of writing function
+
+
+
+</body>
+
+</html>
